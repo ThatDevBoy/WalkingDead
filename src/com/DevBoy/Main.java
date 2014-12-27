@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.DevBoy.Infect.Squads.Squads;
 
 public class Main extends JavaPlugin {
-	
+	//un-finished more to add to this class in the future	
 	
 	public void onEnable() {
 		System.out.println("TheInfection is now enabled!");
