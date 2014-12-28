@@ -7,13 +7,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.DevBoy.Infect.Squads.Squads;
 
 public class Main extends JavaPlugin {
-	//un-finished more to add to this class in the future	
+	
 	
 	public void onEnable() {
 		System.out.println("TheInfection is now enabled!");
 		SettingsManager.getInstance().setup(this);
 		
-		SettingsManager().getInstance().set("sampleteam", new Squads("SquadDev"));
+		SettingsManager().getInstance().set("sampleteam", new Squads("SquadDev").serialize());
 		Squads squad = new Squads (SettingsManager.getInstance().<Map<String, Object>> get("sampleteam");
 		System.out.println(Squads.getName());
 	}
@@ -25,3 +25,4 @@ public class Main extends JavaPlugin {
 	
 
 }
+
