@@ -36,10 +36,10 @@ public class Guns {
 	@EventHandler
 	public void onProjectileHit(ProjectileHitEvent e) {
 	Projectile p = e.getEntity();
-	if(!(p instanceof Snowball)) {
+	if(!(p instanceof Fireball)) {
 	return;
 	}
-	Snowball s = (Snowball) p;
+	Fireball f = (Fireball) p;
 	s.getWorld().createExplosion(s.getLocation(), 5.0F);
 	for(Entity en : s.getNearbyEntities(5, 30, 5)) {
 	if(en instanceof Player) {
