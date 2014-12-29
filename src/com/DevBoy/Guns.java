@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.Fireball;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Projectile;
 import org.bukkit.entity.Snowball;
@@ -26,8 +27,8 @@ public class Guns {
 	public void onPlayerInteract(final PlayerInteractEvent e) {
 	if(!(e.getAction() == Action.RIGHT_CLICK_AIR)) return; //if code catches player not clicking air code stops
 	if(!(e.getItem().getType() == Material.BLAZE_ROD)) return; //makes sure the player is using a blaze rod and if not it stops them.
-	Snowball s = e.getPlayer().launchProjectile(Snowball.class); // snowball launch
-	s.getWorld().playEffect(e.getPlayer().getLocation(), Effect.SMOKE, 10); //Will play a smoke effect when player shoots
+	Fireball f = e.getPlayer().launchProjectile(Fireball.class); // fireball launch
+	f.getWorld().playEffect(e.getPlayer().getLocation(), Effect.SMOKE, 10); //Will play a smoke effect when player shoots
 	
 	}
 	 
