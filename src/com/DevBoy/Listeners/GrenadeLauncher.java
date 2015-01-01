@@ -28,6 +28,8 @@ public class Guns {
 	if(!(e.getAction() == Action.RIGHT_CLICK_AIR)) return; //if code catches player not clicking air code stops
 	if(!(e.getItem().getType() == Material.BLAZE_ROD)) return; //makes sure the player is using a blaze rod and if not it stops them.
 	Fireball f = e.getPlayer().launchProjectile(Fireball.class); // fireball launch
+	e.getPlayer().getLocation().add(2, 0, 0);
+	
 	f.getWorld().playEffect(e.getPlayer().getLocation(), Effect.SMOKE, 10); //Will play a smoke effect when player shoots
 	
 	}
