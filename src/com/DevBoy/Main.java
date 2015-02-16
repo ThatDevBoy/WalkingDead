@@ -1,10 +1,6 @@
 package com.DevBoy.Infect;
 
-import java.util.Map;
-
 import org.bukkit.plugin.java.JavaPlugin;
-
-import com.DevBoy.Infect.Squads.Squads;
 
 public class Main extends JavaPlugin {
 	// Main class is still a WIP
