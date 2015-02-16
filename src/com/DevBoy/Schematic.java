@@ -1,4 +1,4 @@
-package com.DevBoy.Inf;
+package com.DevBoy.Infect;
 
 public class Schematics {
 	
